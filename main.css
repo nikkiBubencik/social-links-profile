@@ -1,0 +1,72 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+:root{
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+
+    --fw-s: 400;
+    --fw-m: 600;
+    --fw-l: 700;
+}
+
+html{
+    font-family: "Inter", sans-serif;
+    background-color: var(--grey-900);
+    color: var(--white);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    height: 100vh;
+}
+
+
+h1{
+    font-weight: var(--fw-l);
+}
+
+h2{
+    font-weight: var(--fw-m);
+    color: var(--green);
+}
+
+p{
+    font-weight: var(--fw-l);
+}
+
+.profile-card{
+    background-color: var(--grey-800);
+    text-align: center;
+    max-width: 21rem;
+    width: 95vw;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-sizing: border-box;
+}
+
+.link-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+.link-container a {
+    max-width: 16rem;
+    width: 90%;
+    place-self: center;
+}
+
+.profile-card a{
+    background-color: var(--grey-700);
+    border-radius: 1rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--white);
+}
