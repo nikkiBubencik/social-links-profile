@@ -55,18 +55,24 @@ p{
 .link-container{
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: .5rem;
 }
-.link-container a {
+
+.link-container > * {
     max-width: 16rem;
     width: 90%;
     place-self: center;
-}
-
-.profile-card a{
     background-color: var(--grey-700);
     border-radius: 1rem;
     padding: 1rem;
+}
+
+.link-container a {
     text-decoration: none;
     color: var(--white);
 }
+.link-container > *:hover, .link-container > *:focus{
+    background-color: var(--grey-800);
+    border: 2px solid var(--green);
+}
+
